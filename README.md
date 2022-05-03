@@ -2,6 +2,8 @@
 
 Maintaining and updating a resume is often an uphill task. In modern times, due to the demand and needs from different resume processing systems, multiple formats are often required. This template allows people to create and customise their resume in three formats: HTML, PDF and DOCX.
 
+Please head hover to the [outputs](/outputs) folder for sample files.  
+
 ## Tools/libraries used
 
 - pandoc
