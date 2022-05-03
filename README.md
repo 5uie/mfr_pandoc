@@ -18,6 +18,7 @@ Maintaining and updating a resume is often an uphill task. In modern times, due 
 - [ ] Clean up template files
 
 ## Contact me
+
 Fosstodon: @5uie1@fosstodon.org
 XMPP: fui@jabb3r.org
 Matrix: @5uie1:matrix.org
