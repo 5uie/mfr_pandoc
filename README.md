@@ -19,11 +19,6 @@ Maintaining and updating a resume is often an uphill task. In modern times, due 
 
 ## Contact me
 
-Fosstodon: @5uie1@fosstodon.org
-XMPP: fui@jabb3r.org
-Matrix: @5uie1:matrix.org
-~
-~
-~
-~
-~
+[Fosstodon](@5uie1@fosstodon.org)<br />
+[XMPP](fui@jabb3r.org)<br />
+[Matrix] (@5uie1:matrix.org)
