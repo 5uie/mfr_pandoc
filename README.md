@@ -12,7 +12,7 @@ Maintaining and updating a resume is often an uphill task. In modern times, due 
 
 - [x] Include comments in makefile
 - [ ] Update the templates for uniformity
-- [ ] Update location of files
+- [x] Update location of files
 - [ ] Add dependency checker
 - [ ] Add license file
 - [ ] Clean up template files

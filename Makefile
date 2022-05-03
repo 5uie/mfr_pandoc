@@ -10,21 +10,21 @@ WORD = wordstyle
 
 # Make docx, pdf and html
 all:
-	pandoc -o $(FILENAME).docx $(FILENAME).md --reference-doc=$(WORD).docx --citeproc
-	pandoc $(FILENAME).md -s -o $(FILENAME).html -c $(HTML).css --citeproc
-	pandoc $(FILENAME).md -o $(FILENAME).pdf --pdf-engine=xelatex -H $(LATEX).tex --citeproc
+	pandoc -o ./outputs/$(FILENAME).docx $(FILENAME).md --reference-doc=./styles/$(WORD).docx --citeproc
+	pandoc $(FILENAME).md -s -o ./outputs/$(FILENAME).html -c ./styles/$(HTML).css --citeproc
+	pandoc $(FILENAME).md -o ./outputs/$(FILENAME).pdf --pdf-engine=xelatex -H ./styles/$(LATEX).tex --citeproc
 
 # Make pdf output with xelatex engine
 pdf:
-	pandoc $(FILENAME).md -o $(FILENAME).pdf --pdf-engine=xelatex -H $(LATEX).tex --citeproc
+	pandoc $(FILENAME).md -o ./outputs/$(FILENAME).pdf --pdf-engine=xelatex -H ./styles/$(LATEX).tex --citeproc
 
 # Make html with provided css
 html:
-	pandoc $(FILENAME).md -s -o $(FILENAME).html -c $(HTML).css --citeproc
+	pandoc $(FILENAME).md -s -o ./outputs/$(FILENAME).html -c ./styles/$(HTML).css --citeproc
 
 # Make docx output with docx template
 docx:
-	pandoc -o $(FILENAME).docx $(FILENAME).md --reference-doc=$(WORD).docx --citeproc
+	pandoc -o ./outputs/$(FILENAME).docx $(FILENAME).md --reference-doc=./styles$(WORD).docx --citeproc
 
 clean:
-	rm resume.{pdf,html,docx}
+	rm ./outputs/resume.{pdf,html,docx}
