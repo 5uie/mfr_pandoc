@@ -1,0 +1,76 @@
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Fonts
+\usepackage{fontspec}
+%\usepackage{ebgaramond}
+
+% Spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% Hyphernation
+\usepackage[none]{hyphenat} 
+\usepackage[shortcuts]{extdash}
+
+% Graphics
+\usepackage{graphicx}
+
+\def\name{Person With Name}
+
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  right=1.0in,
+  top=1.0in
+}
+
+% Customize page headers & footers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Alter titling
+\makeatletter
+\def\@maketitle{%
+  \newpage
+    {\LARGE \@title}%
+ \begin{flushright}
+     \includegraphics[width=10em]{logo.png}
+ \end{flushright}%
+  \vskip -5em}
+\makeatother
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {A, bunch, of, words},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\usepackage{enumitem}
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\itemsep}{0.6em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.6em}
+    \setlength{\rightmargin}{1.8em}
+  }
+}{
+  \end{list}
+}
