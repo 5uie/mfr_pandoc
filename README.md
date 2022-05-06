@@ -13,11 +13,12 @@ Please head hover to the [outputs](/outputs) folder for sample files.
 ## To do (in no particular order)
 
 - [x] Include comments in makefile
-- [ ] Update the templates for uniformity
+- [x] Update the templates for uniformity
 - [x] Update location of files
 - [ ] Add dependency checker
 - [ ] Add license file
-- [ ] Clean up template files
+- [x] Clean up template files
+- [ ] Position logo/photo appropriately
 
 ## Contact me
 

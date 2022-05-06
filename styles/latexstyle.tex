@@ -14,7 +14,11 @@
 \usepackage[shortcuts]{extdash}
 
 % Graphics
-\usepackage{graphicx}
+%\usepackage{graphicx}
+
+% Test image inclusion
+\usepackage{float}
+\floatplacement{figure}{H}
 
 \def\name{Person With Name}
 
@@ -44,10 +48,11 @@
 \def\@maketitle{%
   \newpage
     {\LARGE \@title}%
- \begin{flushright}
-     \includegraphics[width=10em]{logo.png}
- \end{flushright}%
-  \vskip -5em}
+% \begin{flushright}
+%     \includegraphics[width=10em]{logo.png}
+% \end{flushright}%
+%  \vskip -5em
+}
 \makeatother
 
 % The following metadata will show up in the PDF properties
